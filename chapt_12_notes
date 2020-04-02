@@ -1,0 +1,14 @@
+If else, elseIf statement
+
+example 
+
+	var question = "What does a door do?";
+	var answer = prompt(question);
+
+	if (answer == "open" || answer == "Open" ) {
+		alert("Correct!");
+	} else if (answer == "close" || answer == "Close") {
+		alert("Also Correct!");
+	} else {
+		alert("Wring answer");
+	}

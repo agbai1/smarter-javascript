@@ -1,0 +1,88 @@
+### CHAPTPER 15
+#### Arrays
+* array is a variable type
+* arrays hold multiple values assigned to it of different data types. 
+e.g. var cities = ["Aba", "Umuahia", "Port-Harcourt"];
+
+var question = "The first city is on the list is ";
+
+alert(question + cities[0]);
+
+var answer = prompt(question);
+
+city[0] = answer;
+
+alert("The first city is on the list as changed to " + cities[0]);
+
+** The first item in an array always has an index of 0, not 1 **
+
+### CHAPTER 16
+#### Adding and removing array elements
+
+* declaring an empty array 
+	`var emptyArray = [];
+
+	`pop` keyword removes the last element of an array
+	`push` keyword can be sued to add one or more elements to the end of an array.
+
+	Test Function: Create a function that lets people dynamically add city names to an array.
+
+var question = "What is the name of your City? ";
+
+var cities = [];
+
+var num = prompt("How many people will be answering?");
+
+while(cities.length < num){
+  var answer = prompt(question);
+  cities.push(answer);
+}
+
+for (var count = 0; count < cities.length; count++) {
+  alert("The name of City number " + (count+1) + " City is: " + cities[count]);
+}
+
+
+### CHAPTER 17
+#### Removing and Inserting elements in Array
+
+* `arrayName.shift();` removes the first element
+
+* `arrayName.unshift("item1", "item2");` adds one or more elements at the beginning of an array
+
+* `arrayName.splice(2,2,"item1toAdd", "item2toAdd")` - this mehods tells the compiler to add the items after the second element and delete 2 elements after.
+
+e.g. 
+var pets = ["cat", "dog", "pig", "cow", "lizard","bird", "tiger"];
+
+for (var count = 0; count < pets.length; count++) {
+	alert("The name of pet number " + (count+1) + " is " + pets[count]);
+} //displays all the pets in the array before pet 1 shift
+
+alert(pets.length); // 7 at this time
+
+pets.shift(); // removes cat from the array.
+
+alert(pets.length); // 6 at this time
+
+for (var count = 0; count < pets.length; count++) {
+	alert("The name of pet number " + (count+1) + " is " + pets[count]);
+} //displays all the pets in the array after pet 1 shift
+
+
+pets.splice(1, 3, "hen", "fish", "pigeon", "goat"); // I think hen, fish, pigeon, and goat are added after dog and "pig", "cow", "lizard" are deleted from array
+
+alert(pets.length);
+
+for (var count = 0; count < pets.length; count++) {
+	alert("The name of pet number " + (count+1) + " is " + pets[count]);
+} //displays all the pets in the array after more is added and some are taken off
+//order should be dog, hen, fish, pigeon, goat, bird and tiger
+
+pet.splice(3,1); "Tells the compiler to delete 1 element after the 3 item in the array. "
+
+`var newPets = pets.splice(2,4);` creates a new Array
+called newPets and then stores the deleted arrays 
+pet in it. 
+
+	

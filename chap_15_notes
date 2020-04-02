@@ -1,0 +1,14 @@
+ARRAYS
+* array is a variable type
+* arrays hold multiple values assigned to it of different data types. 
+e.g. var cities = ["Aba", "Umuahia", "Port-Harcourt"];
+
+var question = "The first city is on the list is ";
+
+alert(question + cities[0]);
+
+var answer = prompt(question);
+
+city[0] = answer;
+
+alert("The first city is on the list as changed to " + cities[0]);

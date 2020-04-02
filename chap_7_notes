@@ -1,0 +1,22 @@
+Prompts
+`prompt' field asks the user for some 
+information and provides a response field for her answer.
+
+var spec = prompt("Your species?", "human")
+
+the first parameter is the `information' and the second prompt, is the 'response' field which can be changed and "also captured in a variable"
+
+* `prompt` also gives you a way to capture a response, SO START by declaring a VARIABLE.
+
+
+* You can specify a second string, and include a default response that will appear in the display field. 
+
+var question = "How many cards do I have";
+var answer = 2;
+var solution = prompt(question,answer);
+var newAnswer = solution + 3;
+alert(solution);
+alert(newAnswer);
+clear();
+
+

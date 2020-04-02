@@ -1,0 +1,7 @@
+if statement nested
+
+first if condition is always going to be true, and 
+then the second can can be either true or false.
+
+That was if the first condition is false, the code 
+will stop there and not run the rest of the code. 
